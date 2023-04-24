@@ -38,8 +38,8 @@ function App(): JSX.Element {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           <Polyline pathOptions={pathOptions} positions={positions} />
-          <Marker position={positions[0]} icon={L.icon({ iconUrl: 'https://leafletjs.com/examples/custom-icons/leaf-green.png', iconSize: [32, 64] })} />
-          <Marker position={positions[positions.length - 1]} icon={L.icon({ iconUrl: 'https://leafletjs.com/examples/custom-icons/leaf-red.png', iconSize: [32, 64] })} />
+          <Marker position={positions[0]} icon={L.icon({popupAnchor: [-2, -75], iconAnchor: [18, 60],iconUrl: './green.png', iconSize: [32, 64] })} />
+          <Marker position={positions[positions.length - 1]} icon={L.icon({popupAnchor: [-2, -75], iconAnchor: [18, 60], iconUrl: './red.png', iconSize: [32, 64] })} />
         </MapContainer>
       </div>
     </div>
