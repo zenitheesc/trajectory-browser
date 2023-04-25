@@ -3,10 +3,17 @@
   height: 100vh;
 }
 
-.container {
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  flex: 1;
+  min-height: calc(100vh - 100px);
 }
 
 .menu {
@@ -31,4 +38,40 @@
 
 .launchItem {
   display: flex;
+  padding: 0.5em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border-color: black;
+  border-width: 0.8px;
+  border-radius: 7px;
+  border-style: solid;
+}
+
+.launchItem:hover {
+  background-color: gainsboro;
+  cursor: pointer;
+}
+
+.launchName {
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.launchAlt {
+  font-style: italic;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.launchDate {
+  font-style: italic;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
 }
